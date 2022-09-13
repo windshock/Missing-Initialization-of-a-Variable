@@ -1,4 +1,5 @@
-# uninitialized-variable-vulnerability
+# Uninitialized variable vulnerability
+## - Problem with boolean variables that are forcibly initialized to false by the Java compiler
 
 Sites such as CWE and VULNCAT all describe only code quality and memory problems, so I made an example code for the vulnerability of an uninitialized variable(1). In the Java language, boolean member variables that are not explicitly initialized are forcibly initialized to false by the compiler(2). This can lead to logic vulnerabilities(3). If Java had a type like Python's NoneType(4), this might not have happened.
 
